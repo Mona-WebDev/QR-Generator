@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Poppins", sans-serif;
+      background-color: rgba(0, 0, 0, 0.502);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+.container{
+    background-color: white;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 20px;
+    margin: 200px auto ;
+}
+.container p{
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container p,.container input ,.container .generateButton{
+    margin-left: 30px;
+    
+    
+}
+.container input {
+    width: 80%;
+    margin-bottom: 10px;
+}
+.container .generateButton{
+    background-color: #4b59ee;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.container input{
+
+    border: solid 1 px #4b59ee;
+    padding: 10px;
+    /* outline: gray; */
+}
+#qrImage{
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+.error{
+animation: shake  0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translatex(0);
+    }
+    25%{
+        transform: translatex(-2px);
+    }
+    50%{
+        transform: translatex(0);
+    }
+    75%{
+        transform: translatex(2px);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
